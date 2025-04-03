@@ -1,0 +1,20 @@
+name: Healing
+
+on:
+  # workflow_dispatch:
+  push:
+    branches:
+      - staging
+  # pull_request:
+    # branches:
+      # - staging  # for main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Code Checkout
+      uses: actions/checkout@v4
+
+  
